@@ -34,11 +34,11 @@ const products = [
 
   {
     id: 3,
-    tensp: "Bánh Mặn Phô Mai Nướng",
+    tensp: "Mousse Dâu Kem Tươi",
     hinh: "5.jpg",
-    mota: "Bánh giòn rụm, phủ phô mai béo.",
+    mota: "Mousse mềm mịn, dâu chua nhẹ.",
     loaijsp: "sphot",
-    gia: 22000,
+    gia: 35000,
     danhmuc: "Bánh ngọt",
 
     thanhphan: "Socola, kem tươi, bột cacao",
@@ -52,7 +52,7 @@ const products = [
     id: 4,
     tensp: "Croissant Kem Xoài",
     hinh: "11.jpg",
-    mota: "Croissant giòn lớp, kem xoài ngọt thanh.",
+    mota: "Croissant giòn, kem xoài ngọt thanh.",
     loaijsp: "spkm",
     gia: 30000,
     danhmuc: "Bánh mặn",
@@ -82,7 +82,7 @@ const products = [
 
   {
     id: 6,
-    tensp: "Bánh Kem Socola Mini",
+    tensp: "Bánh Socola Cherry",
     hinh: "6.jpg",
     mota: "Cốt mềm, phủ socola đậm vị.",
     loaijsp: "sphot",
@@ -98,7 +98,7 @@ const products = [
 
   {
     id: 7,
-    tensp: "Bánh Mặn Phô Mai Nướng",
+    tensp: "Bánh Mặn Phô Mai",
     hinh: "12.jpg",
     mota: "Bánh giòn rụm, phủ phô mai béo.",
     loaijsp: "spkm",
@@ -130,11 +130,11 @@ const products = [
 
   {
     id: 9,
-    tensp: "Bánh Hot 3",
+    tensp: "Bánh Mì Phô Mai Gà Xé",
     hinh: "10.jpg",
-    mota: "Sản phẩm đặc biệt giới hạn.",
+    mota: "Bánh mềm, nhân gà xé , phô mai béo.",
     loaijsp: "sphot",
-    gia: 20000,
+    gia: 25000,
     danhmuc: "Bánh mặn",
 
     thanhphan: "Nguyên liệu đặc biệt",
@@ -146,7 +146,7 @@ const products = [
 
   {
     id: 10,
-    tensp: "Bánh Quy Mặn Thảo Mộc",
+    tensp: "Bánh Quy Thảo Mộc",
     hinh: "13.jpg",
     mota: "Bánh quy giòn, thơm bơ và thảo mộc.",
     loaijsp: "spkm",
@@ -162,7 +162,7 @@ const products = [
 
   {
     id: 11,
-    tensp: "Bánh Ngọt 4",
+    tensp: "Cupcake Kem Vanilla",
     hinh: "7.jpg",
     mota: "Cupcake nhỏ xinh, kem vanilla thơm.",
     loaijsp: "spbc",
@@ -178,9 +178,9 @@ const products = [
 
   {
     id: 12,
-    tensp: "Bánh Hot 4",
+    tensp: "Bánh Quy Thảo Mộc",
     hinh: "13.jpg",
-    mota: "Bánh hot, hương vị đặc biệt.",
+    mota: "Bánh quy giòn, thơm bơ và thảo mộc.",
     loaijsp: "sphot",
     gia: 20000,
     danhmuc: "Bánh mặn",
@@ -196,9 +196,9 @@ const products = [
     id: 13,
     tensp: "Bánh sinh nhật trái cây",
     hinh: "15.jpg",
-    mota: "Bánh kem mềm mịn đậm đà hương vị.",
+    mota: "Bánh kem lớn, nhiều trái cây tươi.",
     loaijsp: "spđb",
-    gia: 20000,
+    gia: 180000,
     danhmuc: "Bánh đặc biệt",
 
     thanhphan: "Kem tươi, trái cây, bông lan",
@@ -210,11 +210,11 @@ const products = [
 
   {
     id: 14,
-    tensp: "Bánh sinh nhật xoài",
+    tensp: "Bánh Kem Xoài Tươi",
     hinh: "16.jpg",
-    mota: "Bánh kem mềm mịn đậm đà hương vị.",
+    mota: "Kem xoài thơm, vị ngọt thanh.",
     loaijsp: "spđb",
-    gia: 20000,
+    gia: 150000,
     danhmuc: "Bánh đặc biệt",
 
     thanhphan: "Xoài, kem, bông lan",
@@ -228,9 +228,9 @@ const products = [
     id: 15,
     tensp: "Combo bánh Giáng Sinh",
     hinh: "23.jpg",
-    mota: "Bánh kem mềm mịn đậm đà hương vị.",
+    mota: "Combo bánh mini, trang trí đẹp.",
     loaijsp: "spđb",
-    gia: 20000,
+    gia: 120000,
     danhmuc: "Bánh đặc biệt",
 
     thanhphan: "Bánh mix nhiều loại",
@@ -246,7 +246,7 @@ const products = [
     hinh: "21.jpg",
     mota: "Bánh kem mềm mịn đậm đà hương vị.",
     loaijsp: "spđb",
-    gia: 20000,
+    gia: 140000,
     danhmuc: "Bánh đặc biệt",
 
     thanhphan: "Mascarpone, cacao, cà phê",

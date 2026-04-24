@@ -7,6 +7,7 @@ export default function Show_Detail() {
     const { id } = useParams();
     const product = products.find(sp => sp.id === parseInt(id));
     const [qty, setQty] = useState(1);
+    const [showFull, setShowFull] = useState(false);
 
     useLayoutEffect(() => {
         window.scrollTo(0, 0);
@@ -87,7 +88,20 @@ export default function Show_Detail() {
                 <div className="col-md-6">
 
                     <h2>{product.tensp}</h2>
-                    <p className="text-muted">{product.mota}</p>
+                    <div className="mt-2">
+                        <p className="text-muted" style={{ lineHeight: "1.7" }}>
+                            {showFull
+                                ? product.mota + " Bánh được làm từ nguyên liệu tươi ngon, đảm bảo chất lượng và an toàn vệ sinh thực phẩm. Hương vị hài hòa, phù hợp với nhiều đối tượng khách hàng. Đây là lựa chọn tuyệt vời cho bữa ăn nhẹ hoặc những buổi gặp gỡ bạn bè."
+                                : product.mota}
+                        </p>
+
+                        <button
+                            className="btn btn-link p-0"
+                            onClick={() => setShowFull(!showFull)}
+                        >
+                            {showFull ? "Thu gọn" : "Xem thêm"}
+                        </button>
+                    </div>
 
                     <h4 className="text-primary">{product.gia}đ</h4>
 
