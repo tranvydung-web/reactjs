@@ -1,0 +1,320 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+    text-decoration: none;
+    transition: .2s linear;
+}
+
+/* navbar */
+nav{
+    position: fixed;
+    background:#5a3e2b;;
+    padding: 1rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav .logo{
+    color: #fff;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+nav ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul a{
+    padding: 0 1.5rem;
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul a:hover{
+    color: #b31b1b;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav .lienhe{
+    display: flex;
+}
+
+nav .lienhe img{
+    height: 1.75rem;
+    margin-right: 1rem;
+}
+
+nav .lienhe .sdt{
+    color: #fff;
+}
+
+nav .btn{
+    border-radius: 1.5rem;
+    background: #fff;
+    color: #362222;
+    padding: 0.5rem 1rem;
+    font-size: 1rem; 
+}
+
+nav .btn:hover{
+    background: #b31b1b;
+}
+
+section{
+    padding: 0 9%;
+}
+
+/* gioithieu */
+
+.gioithieu{
+    background-color: white;
+}
+
+.col-md-6{
+    width: 50%;
+    height: 500px;
+    /* border: 1px solid black; */
+    position: relative;
+}
+
+.gioithieu_text{
+    padding: 120px 60px;
+    left: 130px;
+}
+
+.gioithieu_text p{
+    margin-top: 20px;
+    margin-bottom: 25px;
+    text-align: justify;
+}
+
+.gioithieu_text ul li{
+    list-style: none;
+    margin: 30px 0;
+
+}
+
+.anh-1{
+    width: 28%;
+    height: 60%;
+    border: 7px solid #d4c8c8;
+    position: absolute;
+    bottom: 25px;
+    left: 140px;
+    border-radius: 45%;
+    z-index: 2;
+}
+
+.anh-1 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 45%;
+}
+
+.anh-2{
+    width: 42%;
+    height: 90%;
+    border: 7px solid #d4c8c8;
+    position: absolute;
+    bottom: 25px;
+    left: 300px;
+    border-radius: 45%;
+}
+
+.anh-2 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 45%;
+}
+
+/* footer */
+footer{
+    background:#5a3e2b;;
+    color: white;
+    padding: 20px 0;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+footer h5{
+    margin-bottom: 15px;
+}
+
+footer ul{
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li{
+    margin: 5px 0;
+}
+
+footer hr{
+    border: 1px solid rgba(255,255,255,0.4);
+    margin: 15px 0;
+}
+
+footer .row > div{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.copyright{
+    text-align: center;
+}
+
+/* form dk */
+#dk{
+    width: 400px;
+    padding: 30px;
+    display: none;
+    position: absolute;
+    top: 200px;
+    left: calc(50% - 200px);
+    z-index: 2;
+    background-color: white;
+    border-radius: 5px;
+}
+
+#dk input{
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+}
+
+.fm{
+    margin-top: 15px;
+}
+
+.fmm input{
+    margin-top: 15px;
+    background-color: #362222;
+    color: #fff;
+    padding: 10px;
+    font-size: 15px;
+}
+
+h1{
+    text-align: center;
+    color: #362222;
+}
+/* gioithieu */
+.anh-1 img,
+.anh-2 img{
+    width:100%;
+    height:350px;
+    object-fit:cover;
+    border-radius:20px;
+}
+/* dau x */
+.daux{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    border: none;
+    background: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Trang giới thiệu */
+.gioithieu_header{
+    display: flex;
+    justify-content: center;   
+    align-items: center;       /* căn giữa dọc */
+    height: 400px;
+    background: url(../images/header_gioithieu.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 80px;
+}
+
+.tintuc_header{
+    display: flex;
+    justify-content: center;   
+    align-items: center;       /* căn giữa dọc */
+    height: 400px;
+    background: url(../images/header_tintuc.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 80px;
+}
+
+
+nav .lienhe a{
+    text-decoration: none;
+}
+
+.header-content{
+    text-align: center;
+    color: white;
+}
+
+.header-content h1{
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+.header-content a{
+    color: #fff;
+}
+
+.header-content p{
+    font-size: 18px;
+}
+
+.about{
+    padding: 80px 9%;
+    background: #fff;
+}
+
+.about-img img{
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.about-text{
+    padding: 40px;
+}
+
+.about-text h2{
+    font-size: 32px;
+    color: #362222;
+    margin-bottom: 20px;
+}
+
+.about-text p{
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+#btn{
+    border: 1px solid #999;
+    background: #f5f5f5;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    /* border: none; */
+    padding: 6px 14px;
+    border-radius: 5px;
+    display: block;
+    margin: 25px auto 0 auto; 
+}

@@ -1,0 +1,30 @@
+.frame-header{
+    background-color: blanchedalmond;
+    height: 50px;
+}
+
+.hang{
+    line-height: 50px;
+}
+
+#login{
+    width: 400px;
+    height: 250px;
+    background-color: #f5ded2;
+    position: absolute;
+    top: 10%;
+    left: calc(50% - 200px);
+    z-index: 10;
+    border-radius: 6px;
+}
+
+/* dau x  */
+.daux{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    border: none;
+    background: none;
+    font-size: 30px;
+    cursor: pointer;
+}

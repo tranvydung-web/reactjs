@@ -1,0 +1,331 @@
+/* product */
+.frame-header {
+    height: 50px;
+    background: #efe7dd;
+    color: #5a3e2b;
+}
+
+.frame-danhmuc {
+    /* border: 1px solid #3e2c23; */
+    background: #fbf7f1;
+    border: 1px solid #dbbb93;
+    padding: 15px;
+}
+
+.frame-danhmuc h3 {
+    background: #6b4f3b;
+    color: white;
+    padding: 80px;
+    text-align: center;
+}
+
+.frame-danhmuc h3 {
+    background: #6b4f3b;
+    color: white;
+    padding: 8px;
+    text-align: center;
+}
+
+.carousel-item {
+    width: 100%;
+    height: 600px;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+}
+
+.cch {
+    line-height: 50px;
+}
+
+.navbar {
+    background: #5a3e2b;
+}
+
+.btnn {
+    background: #fff;
+    color: #3e2c23;
+}
+
+ul li {
+    cursor: pointer;
+}
+
+#login {
+    width: 400px;
+    height: 250px;
+    background: #fbf7f1;
+    position: absolute;
+    top: 10%;
+    left: calc(50% - 200px);
+    z-index: 10;
+    border: 2px solid #c89b6d;
+    border-radius: 8px;
+}
+
+#btn-login {
+    border-radius: 6px;
+    background: #c89b6d;
+}
+
+/* thanhtimkiem */
+.form-control {
+    border: 1px solid #d6c4b2;
+}
+
+.btn-primary {
+    background: #c89b6d;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 10px;
+}
+
+.btn-primary:hover {
+    background: #b68658;
+}
+
+/* gioithieu */
+
+
+/* card */
+.card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.card-img-top {
+    height: 320px;
+    object-fit: cover;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-title {
+    color: #5a3e2b;
+}
+
+.card-text {
+    color: #6e5b4b;
+}
+
+/* dau x */
+.daux {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    border: none;
+    background: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* detail  */
+.detail {
+    height: 550px;
+    /* border: 1px solid black; */
+}
+
+.fr-detail {
+    height: 100px;
+    width: 100px;
+    /* border: 1px solid black ; */
+    display: flex;
+}
+
+.fr-detail img {
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+}
+
+.img-mota {
+    width: 100%;
+    height: 400px;
+}
+
+.mota img {
+    width: 100%;
+    height: 100%;
+}
+
+.mota {
+    margin-top: 40px;
+    padding: 20px;
+    border-top: 2px solid rgb(230, 219, 219);
+}
+
+/* footer */
+footer {
+    background: #5a3e2b;
+    color: white;
+}
+
+footer a {
+    color: #e6c8a5;
+}
+
+footer a:hover {
+    color: white;
+}
+
+/* form dk */
+#dk {
+    width: 400px;
+    padding: 30px;
+    display: none;
+    position: absolute;
+    top: 200px;
+    left: calc(50% - 200px);
+    z-index: 2;
+    background-color: white;
+    border-radius: 5px;
+}
+
+#dk input {
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+}
+
+.fm {
+    margin-top: 15px;
+}
+
+.fmm input {
+    margin-top: 15px;
+    background-color: #362222;
+    color: #fff;
+    padding: 10px;
+    font-size: 15px;
+}
+
+h1 {
+    text-align: center;
+    color: #362222;
+}
+
+/* Tranggioithieu */
+.gioithieu_header {
+    height: 400px;
+    background: url(../images/header_gioithieu.jpg) no-repeat center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: calc(-0.5 * var(--bs-gutter-x));
+    margin-right: calc(-0.5 * var(--bs-gutter-x));
+}
+
+.chiso {
+    background-color: #c89b6d;
+}
+
+/* Màu sắc thương hiệu tùy chỉnh */
+.bg-cake {
+    background-color: #c89b6d !important;
+}
+
+.text-cake {
+    color: #c89b6d !important;
+}
+
+.border-cake {
+    border: 2px solid #c89b6d !important;
+}
+
+/* Hiệu ứng rê chuột nhẹ cho Card */
+.card-hover:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.gioithieu img {
+    margin-left: calc(-0.5 * var(--bs-gutter-x));
+    margin-right: calc(-0.5 * var(--bs-gutter-x));
+}
+
+.tintuc_header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* căn giữa dọc */
+    height: 400px;
+    background: url(../images/header_tintuc.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 80px;
+    margin-left: calc(-0.5 * var(--bs-gutter-x));
+    margin-right: calc(-0.5 * var(--bs-gutter-x));
+}
+
+nav .lienhe a {
+    text-decoration: none;
+}
+
+.header-content {
+    text-align: center;
+    color: white;
+}
+
+.header-content h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+.header-content a {
+    color: #fff;
+}
+
+.header-content p {
+    font-size: 18px;
+}
+
+.about {
+    padding: 80px 9%;
+    background: #fff;
+}
+
+.about-img img {
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.about-text {
+    padding: 40px;
+}
+
+.about-text h2 {
+    font-size: 32px;
+    color: #362222;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+#btn {
+    border: 1px solid #999;
+    background: #f5f5f5;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    /* border: none; */
+    padding: 6px 14px;
+    border-radius: 5px;
+    display: block;
+    margin: 25px auto 0 auto;
+}

@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<style>
+    #login {
+        width: 400px;
+        height: 250px;
+        background: #fbf7f1;
+        position: absolute;
+        top: 10%;
+        left: calc(50% - 200px);
+        z-index: 10;
+        border: 2px solid #c89b6d;
+        border-radius: 8px;
+        /* display: none; */
+    }
+
+    #login input {
+        border: 1px solid black;
+    }
+
+    /* dau x */
+    .daux {
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        border: none;
+        background: none;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    .chiso {
+        background-color: #c89b6d;
+    }
+
+    /* Màu sắc thương hiệu tùy chỉnh */
+    .bg-cake {
+        background-color: #c89b6d !important;
+    }
+
+    .text-cake {
+        color: #c89b6d !important;
+    }
+
+    .border-cake {
+        border: 2px solid #c89b6d !important;
+    }
+
+    /* Hiệu ứng rê chuột nhẹ cho Card */
+    .card-hover:hover {
+        transform: translateY(-5px);
+        transition: 0.3s;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+    }
+</style>
+
+<body>
+
+    <!-- form dn -->
+    <form action="" id="login" class="p-4">
+        <button type="button" class="daux" onclick="dongFormdn()">x</button>
+        <div class="row text-center">
+            <h3>Đăng nhập</h3>
+        </div>
+
+        <label for="">User</label>
+        <input type="text" id="user" style="width: 100%;">
+
+        <label for="">Password</label>
+        <input type="password" id="password" style="width: 100%;">
+
+        <div class="row text-center">
+            <div class="div">
+                <button type="submit" style="width: 120px">Đăng Nhập</button>
+            </div>
+        </div>
+    </form>
+
+    <!-- form dk -->
+    <form action="" id="dk">
+        <button type="button" class="daux" onclick="dongForm()">×</button>
+
+        <h1>ĐĂNG KÝ TÀI KHOẢN</h1>
+
+        <div class="fm">
+            <label for="">Tên</label> <br>
+            <input type="text" style="width: 100%">
+        </div>
+
+        <div class="fm">
+            <label for="">Email</label> <br>
+            <input type="email" style="width: 100%">
+        </div>
+
+        <div class="fm">
+            <label for="">Mật khẩu</label> <br>
+            <input type="password" style="width: 100%">
+        </div>
+
+        <div class="fm">
+            <label for="">Xác nhận mật khẩu</label> <br>
+            <input type="text" style="width: 100%">
+        </div>
+
+        <div class="fm">
+            <label for="">Số điện thoại</label> <br>
+            <input type="text" style="width: 100%">
+        </div>
+
+        <div class="fm">
+            <label for="">Nhập địa chỉ</label> <br>
+            <input type="text" style="width: 100%">
+        </div>
+
+        <div class="fmm" align="center"><input type="submit" value="Tạo tài khoản"></div>
+
+    </form>
+    <nav>
+        <a href="#" class="logo">Cake Bakery</a>
+
+        <ul>
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="gioithieu.html">Giới thiệu</a></li>
+            <li><a href="product.html">Sản phẩm</a></li>
+            <li><a href="tintuc.html">Tin tức</a></li>
+            <li><a href="#" id="lienhe">Liên hệ</a></li>
+            <li><a href="#" id="btn-login">Đăng nhập</a></li>
+            <li><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
+        </ul>
+
+        <div class="lienhe">
+            <img src="images/phone-call_white.png" alt="">
+            <a href="">
+                <div class="sdt">(+84)0904_749_239</div>
+            </a>
+        </div>
+        <a href="" class="btn" id="lienhe2">Liên hệ</a>
+    </nav>
+
+    <section class="gioithieu_header">
+
+        <div class="header-content">
+            <h1>Giới Thiệu</h1>
+            <p><a href="index.html">Trang chủ</a> / Giới thiệu</p>
+        </div>
+
+    </section>
+
+    <section class="about py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-md-6">
+                    <img src="images/video1.gif" alt="" class="img-fluid rounded-4 shadow-lg"
+                        style="height: 450px; width: 100%; object-fit: cover;">
+                </div>
+
+                <div class="col-md-6">
+                    <h2 class="text-center">Cake Bakery</h2>
+                    <p>Hương vị ngọt ngào trong từng khoảnh khắc.</p>
+                    <p>
+                        Cake Bakery được thành lập với mong muốn mang đến những chiếc bánh tươi ngon mỗi ngày.
+                        Chúng tôi lựa chọn nguyên liệu tự nhiên và quy trình thủ công tinh tế.Mỗi ổ bánh trao đi không
+                        chỉ là vị ngọt, mà còn là tâm huyết và niềm hạnh phúc chúng tôi gửi gắm đến thực khách.
+                    </p>
+
+                    <button id="btn" class="btn btn-lg text-white bg-cake px-4 shadow-sm">Xem chi tiết</button>
+
+                    <div id="xemchitiet" class="mt-4 p-3 bg-white border-start border-4 border-cake shadow-sm rounded">
+                        <p class="mb-2">Chúng tôi sử dụng nguyên liệu cao cấp: bơ Pháp, socola Bỉ...</p>
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-1"><i class="fa-solid fa-circle-check text-success me-2"></i> Bánh sinh nhật
+                                theo yêu cầu</li>
+                            <li class="mb-1"><i class="fa-solid fa-circle-check text-success me-2"></i> Nhận đặt tiệc –
+                                sự kiện</li>
+                            <li><i class="fa-solid fa-circle-check text-success me-2"></i> Giao hàng tận nơi</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- chiso -->
+    <section class=" chiso py-2 text-white">
+        <div class="container">
+            <div class="row text-center g-2">
+                <div class="col-6 col-md-3">
+                    <div class="p-3">
+                        <h2 class="display-4 fw-bold">10+</h2>
+                        <p class="lead mb-0">Năm kinh nghiệm</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="p-3">
+                        <h2 class="display-4 fw-bold">50+</h2>
+                        <p class="lead mb-0">Loại bánh ngọt</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="p-3">
+                        <h2 class="display-4 fw-bold">1k+</h2>
+                        <p class="lead mb-0">Khách hàng tháng</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="p-3">
+                        <h2 class="display-4 fw-bold">5</h2>
+                        <p class="lead mb-0">Chi nhánh</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Giới thiệu đội ngũ  -->
+    <section class="py-5 bg-white">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold h1">Đội Ngũ Nghệ Nhân</h2>
+                <hr class="mx-auto opacity-100" style="width: 60px; height: 3px; color: #c89b6d;">
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="card border-0 shadow-sm h-100 p-4 card-hover text-center">
+                        <img src="./images/beptruong.jpg"
+                            class="rounded-circle mx-auto mb-3 border border-4 border-light shadow-sm"
+                            style="width: 150px; height: 150px; object-fit: cover;" alt="Chef">
+                        <div class="card-body p-0">
+                            <h5 class="fw-bold mb-1">Nguyễn Thị Tường Vân</h5>
+                            <p class="text-cake small fw-bold mb-3">Bếp trưởng</p>
+                            <p class="text-muted small mb-0">Với 15 năm tu nghiệp tại Pháp, mang đến hương vị chuẩn Châu
+                                Âu.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card border-0 shadow-sm h-100 p-4 card-hover text-center">
+                        <img src="./images/chuyengiatrangtri.jpg"
+                            class="rounded-circle mx-auto mb-3 border border-4 border-light shadow-sm"
+                            style="width: 150px; height: 150px; object-fit: cover;" alt="Chef">
+                        <div class="card-body p-0">
+                            <h5 class="fw-bold mb-1">Nguyễn Tuyết Nhung</h5>
+                            <p class="text-cake small fw-bold mb-3">Chuyên gia trang trí</p>
+                            <p class="text-muted small mb-0">Biến mỗi chiếc bánh thành một tác phẩm nghệ thuật đầy màu
+                                sắc.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card border-0 shadow-sm h-100 p-4 card-hover text-center">
+                        <img src="./images/tholambanh.jpg"
+                            class="rounded-circle mx-auto mb-3 border border-4 border-light shadow-sm"
+                            style="width: 150px; height: 150px; object-fit: cover;" alt="Chef">
+                        <div class="card-body p-0">
+                            <h5 class="fw-bold mb-1">Nguyễn Đoàn Thảo Nguyên</h5>
+                            <p class="text-cake small fw-bold mb-3">Thợ làm bánh mì</p>
+                            <p class="text-muted small mb-0">Đảm bảo những mẻ bánh mì luôn nóng hổi và giòn tan mỗi
+                                sáng.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card border-0 shadow-sm h-100 p-4 card-hover text-center">
+                        <img src="./images/chuyengia.jpg"
+                            class="rounded-circle mx-auto mb-3 border border-4 border-light shadow-sm"
+                            style="width: 150px; height: 150px; object-fit: cover;" alt="Chef">
+                        <div class="card-body p-0">
+                            <h5 class="fw-bold mb-1">Phạm Ánh Dương</h5>
+                            <p class="text-cake small fw-bold mb-3">Chuyên gia kiểm định chất lượng</p>
+                            <p class="text-muted small mb-0">Đảm bảo mọi sản phẩm đều đạt chuẩn tuyệt đối.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class=" text-white pt-4">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 mb-3">
+                    <h5>Liên hệ</h5>
+                    <p>📍 123 Nguyễn Văn A, TP.HCM</p>
+                    <p>📞 0904 749 239</p>
+                    <p>✉ cakebakery@gmail.com</p>
+                    <p>🕒 7:00 - 22:00</p>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <h5>Liên kết</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white text-decoration-none">Trang chủ</a></li>
+                        <li><a href="gioithieu.html" class="text-white text-decoration-none">Giới thiệu</a></li>
+                        <li><a href="product.html" class="text-white text-decoration-none">Sản phẩm</a></li>
+                        <li><a href="tintuc.html" class="text-white text-decoration-none">Tin tức</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Liên hệ</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6592.422415798043!2d106.63325639581271!3d10.743898726738665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752e7eaa206499%3A0x7ed7d81c182fa7ca!2zMjE3IMSQLiBOZ3V54buFbiBWxINuIEx1w7RuZywgUGjGsOG7nW5nIDExLCBRdeG6rW4gNiwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1773045365894!5m2!1svi!2s"
+                        width="450" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+            </div>
+        </div>
+
+        <hr class="border-bottom">
+
+        <!-- Footer bottom -->
+        <div class="text-center">
+            © 2026 Cake Bakery. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Form dn -->
+    <script>
+        $(document).ready(function () {
+            $("#login").hide();
+            $("#btn-login").click(function () {
+                $("#login").toggle();
+            })
+        })
+
+        $(document).ready(function () {
+            $("#login").submit(function (event) {
+                event.preventDefault();
+
+                let user = $("#user").val();
+                let password = $("#password").val();
+
+                console.log(user);
+                console.log(password);
+
+                if (user == "" || password == "") {
+                    alert("Bạn chưa nhập user và password");
+                } else if (user == "admin" && password == "1234") {
+                    alert("Bạn đã đăng nhập thành công");
+                } else {
+                    alert("Sai tài khoản hoặc mật khẩu");
+                }
+            });
+        });
+    </script>
+
+    <script>
+        function dongFormdn() {
+            document.getElementById("login").style.display = "none";
+        }
+    </script>
+
+
+
+    <!-- Form dk -->
+    <script>
+        $(document).ready(function () {
+            $("#lienhe").click(function () {
+                $("#dk").toggle();
+            })
+        })
+    </script>
+
+    <script>
+        function dongForm() {
+            document.getElementById("dk").style.display = "none";
+        }
+    </script>
+
+    <script>
+        $(document).ready(function () {
+
+
+            $("#btn").click(function () {
+                $("#xemchitiet").slideToggle();
+            })
+        })
+    </script>
+
+</body>
+
+</html>

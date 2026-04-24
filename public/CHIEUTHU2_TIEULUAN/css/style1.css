@@ -1,0 +1,235 @@
+/* product */
+.frame-header{
+    height: 50px;
+    background:#efe7dd;
+    color:#5a3e2b;
+}
+
+.carousel-item{
+    width: 100%;
+    height: 600px;
+}
+
+.carousel-item img{
+    width: 100%;
+    height: 100%;
+}
+
+.cch{
+    line-height: 50px;
+}
+
+.navbar{
+    background:#5a3e2b;
+}
+
+ul li{
+    cursor: pointer;
+}
+
+#login{
+    width: 400px;
+    height: 250px;
+    background:#fbf7f1;
+    position: absolute;
+    top: 10%;
+    left: calc(50% - 200px);
+    z-index: 10;
+    border:2px solid #c89b6d;
+    border-radius:8px;
+}
+/* Giỏ hàng */
+#giohang {
+    position: fixed;    
+    top: 50%;           
+    left: 50%;          
+    transform: translate(-50%, -50%); 
+    z-index: 9;     
+    background: white;  
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 1000px;   
+    display: none;      
+}
+/* Trang toán */
+#thanhtoan{
+    width: 400px;
+    height: 350px;
+    background:#fbf7f1;
+    position: absolute;
+    top: 10%;
+    left: calc(50% - 200px);
+    z-index: 10;
+    border:2px solid #c89b6d;
+    border-radius:8px;
+}
+
+/* thanhtimkiem */
+.form-control{
+    border:1px solid #d6c4b2;
+}
+
+.btn-primary{
+    background:#c89b6d;
+    border:none;
+}
+
+.btn-primary:hover{
+    background:#b68658;
+}
+
+/* gioithieu */
+
+/* card */
+.card{
+    border:none;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+}
+
+.card-title{
+    color:#5a3e2b;
+}
+
+.card-text{
+    color:#6e5b4b;
+}
+/* dau x */
+.daux{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    border: none;
+    background: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* detail  */
+.detail{
+    height: 550px;
+    /* border: 1px solid black; */
+}
+
+.fr-detail{
+    height: 100px;
+    width: 100px;
+    /* border: 1px solid black ; */
+    display: flex;
+}
+
+.fr-detail img{
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+}
+
+.img-mota{
+    width: 100%;
+    height: 400px;
+}
+
+.mota img{
+    width: 100%;
+    height: 100%;
+}
+
+.mota{
+    margin-top: 40px;
+    padding: 20px;
+    border-top: 2px solid rgb(230, 219, 219);
+}
+/* footer */
+footer{
+    background:#5a3e2b;
+    color:white;
+}
+
+footer a{
+    color:#e6c8a5;
+}
+
+footer a:hover{
+    color:white;
+}
+
+/* form dk */
+#dk{
+    width: 400px;
+    padding: 30px;
+    display: none;
+    position: absolute;
+    top: 200px;
+    left: calc(50% - 200px);
+    z-index: 2;
+    background-color: white;
+    border-radius: 5px;
+}
+
+#dk input{
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+}
+
+.fm{
+    margin-top: 15px;
+}
+
+.fmm input{
+    margin-top: 15px;
+    background-color: #362222;
+    color: #fff;
+    padding: 10px;
+    font-size: 15px;
+}
+
+h1{
+    text-align: center;
+    color: #362222;
+}
+
+/* trang chủ */
+/* Thiết lập khung cố định cho banner */
+.banner-container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.banner-frame {
+    width: 100%;
+    /* Chiều cao cố định để 3 hình luôn bằng nhau, không bị giật khi chuyển */
+    height: 500px; 
+    
+    /* Chống méo: Ảnh sẽ phủ kín khung nhưng tự căn giữa */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    transition: transform 0.5s ease;
+}
+
+/* Đẹp hơn cho Menu Dropdown */
+.dropdown-menu {
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.dropdown-header {
+    color: #c89b6d;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+}
+
+/* Responsive cho điện thoại: Giảm chiều cao banner để không bị quá dài */
+@media (max-width: 768px) {
+    .banner-frame {
+        height: 300px;
+    }
+}

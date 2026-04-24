@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/style1.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<style>
+    .btn1 {
+        background-color: #c89b6d;
+        color: #fff;
+    }
+</style>
+
+<body>
+    <!-- form dn -->
+    <form action="" id="login" class="p-4">
+        <button type="button" class="daux" onclick="dongFormdn()">×</button>
+        <div class="row text-center">
+            <h3>Đăng Nhập</h3>
+        </div>
+
+        <label for="">User</label>
+        <input type="text" id="user" style="width: 100%;">
+
+        <label for="">Password</label>
+        <input type="password" id="password" style="width: 100%;">
+
+        <div class="row text-center">
+            <div class="div">
+                <button style="width: 120px;">Đăng Nhập</button>
+            </div>
+        </div>
+    </form>
+
+    <!-- form dk -->
+    <form action="" id="dk">
+        <button type="button" class="daux" onclick="dongFormdk()">×</button>
+
+        <h1>ĐĂNG KÝ TÀI KHOẢN</h1>
+
+        <div class="fm">
+            <label for="">Tên</label> <br>
+            <input type="text" style="width: 100%">
+        </div>
+
+        <div class="fm">
+            <label for="">Email</label> <br>
+            <input type="email" style="width: 100%">
+        </div>
+
+        <div class="fm">
+            <label for="">Mật khẩu</label> <br>
+            <input type="password" style="width: 100%">
+        </div>
+
+        <div class="fm">
+            <label for="">Xác nhận mật khẩu</label> <br>
+            <input type="text" style="width: 100%">
+        </div>
+
+        <div class="fm">
+            <label for="">Số điện thoại</label> <br>
+            <input type="text" style="width: 100%">
+        </div>
+
+        <div class="fm">
+            <label for="">Nhập địa chỉ</label> <br>
+            <input type="text" style="width: 100%">
+        </div>
+
+        <div class="fmm" align="center"><input type="submit" value="Tạo tài khoản"></div>
+
+    </form>
+    <!-- Giohang  -->
+    <form action="" id="giohang" class="container mt-5 shadow-lg p-4 rounded-3 bg-white">
+        <button type="button" class="daux" onclick="dongFormgh()">×</button>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="fw-bold mb-4 text-dark">Giỏ hàng của bạn</h2>
+
+                    <div class="card shadow-sm border-0">
+                        <div class="table-responsive">
+                            <table class="table table-hover align-middle mb-0">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th class="py-3 ps-4">STT</th>
+                                        <th>Tên sản phẩm</th>
+                                        <th>Hình sản phẩm</th>
+                                        <th>Đơn giá</th>
+                                        <th style="width: 100px;">Số lượng</th>
+                                        <th>Thành tiền</th>
+                                        <th class="text-center">Thao tác</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="ps-4">1</td>
+                                        <td class="fw-bold">Bánh mặn</td>
+                                        <td><img src="./images/banhman1.jpg" alt="" height="60"
+                                                class="rounded border shadow-sm"></td>
+                                        <td>25.000đ</td>
+                                        <td>
+                                            <input type="number" class="form-control form-control-sm text-center"
+                                                value="1">
+                                        </td>
+                                        <td class="fw-bold text-danger">25.000đ</td>
+                                        <td class="text-center">
+                                            <button type="button"
+                                                class="btn btn-outline-danger btn-sm px-3">Xoá</button>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="ps-4">2</td>
+                                        <td class="fw-bold">Bánh kem</td>
+                                        <td><img src="./images/banhsinhnhat.jpg" alt="" height="60"
+                                                class="rounded border shadow-sm"></td>
+                                        <td>150.000đ</td>
+                                        <td>
+                                            <input type="number" class="form-control form-control-sm text-center"
+                                                value="2">
+                                        </td>
+                                        <td class="fw-bold text-danger">300.000đ</td>
+                                        <td class="text-center">
+                                            <button type="button"
+                                                class="btn btn-outline-danger btn-sm px-3">Xoá</button>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="ps-4">3</td>
+                                        <td class="fw-bold">Bánh ngọt</td>
+                                        <td><img src="./images/banhngot1.jpg" alt="" height="60"
+                                                class="rounded border shadow-sm"></td>
+                                        <td>27.000đ</td>
+                                        <td>
+                                            <input type="number" class="form-control form-control-sm text-center"
+                                                value="2">
+                                        </td>
+                                        <td class="fw-bold text-danger">54.000đ</td>
+                                        <td class="text-center">
+                                            <button type="button"
+                                                class="btn btn-outline-danger btn-sm px-3">Xoá</button>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="ps-4">4</td>
+                                        <td class="fw-bold">Bánh ngọt</td>
+                                        <td><img src="./images/banhngot10.jpg" alt="" height="60"
+                                                class="rounded border shadow-sm"></td>
+                                        <td>29.000đ</td>
+                                        <td>
+                                            <input type="number" class="form-control form-control-sm text-center"
+                                                value="1">
+                                        </td>
+                                        <td class="fw-bold text-danger">29.000đ</td>
+                                        <td class="text-center">
+                                            <button type="button"
+                                                class="btn btn-outline-danger btn-sm px-3">Xoá</button>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="ps-4">5</td>
+                                        <td class="fw-bold">Combo bánh</td>
+                                        <td><img src="./images/combobanh3.jpg" alt="" height="60"
+                                                class="rounded border shadow-sm"></td>
+                                        <td>34.000đ</td>
+                                        <td>
+                                            <input type="number" class="form-control form-control-sm text-center"
+                                                value="2">
+                                        </td>
+                                        <td class="fw-bold text-danger">68.000đ</td>
+                                        <td class="text-center">
+                                            <button type="button"
+                                                class="btn btn-outline-danger btn-sm px-3">Xoá</button>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+
+                                <tfoot class="table-light">
+                                    <tr>
+                                        <td colspan="3" class="ps-4 py-3"><b>Tổng cộng:</b></td>
+                                        <td colspan="3" class="py-3 fw-bold text-danger fs-5">476.000đ</td>
+                                        <td colspan="1" class="text-center py-3">
+                                            <button type="button" class="btn btn1 px-4" id="btn-thanhtoan">Thanh
+                                                toán</button>
+                                        </td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <!-- Thanh toán -->
+    <form action="" id="thanhtoan" class="p-4">
+        <button type="button" class="daux" onclick="dongFormtt()">×</button>
+        <div class="row text-center">
+            <h3>Thanh Toán</h3>
+        </div>
+
+        <label for="">Tên khách hàng</label>
+        <input type="text" id="user" style="width: 100%;">
+
+        <label for="">Địa chỉ</label>
+        <input type="password" id="password" style="width: 100%;">
+
+        <label for="">Số điện thoại</label>
+        <input type="text" id="password" style="width: 100%;">
+
+        <label for="">Tổng thành tiền</label>
+        <input type="text" id="password" style="width: 100%;">
+
+        <div class="row text-center">
+            <div class="div mt-2">
+                <button type="button" class="btn btn1" style="width: 150px;">Thanh Toán</button>
+            </div>
+        </div>
+
+    </form>
+
+
+    <header class="frame-header border-bottom py-2">
+        <div class="container-fluid px-4">
+            <div class="row text-center align-items-center">
+
+                <div class="col-md-4">
+                    📞 HOTLINE: <b>0909345678</b>
+                </div>
+
+                <div class="col-md-4">
+                    🎁 Ưu đãi mỗi ngày cho khách hàng
+                </div>
+
+                <div class="col-md-4">
+                    <button class="btn btn-outline-dark btn-sm me-2" id="btn-login">
+                        Đăng nhập
+                    </button>
+                    <button class="btn btn-dark btn-sm" id="btn-giohang">
+                        👜 Giỏ hàng
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <nav class="navbar navbar-expand-sm navbar-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="javascript:void(0)">Cake Bakery</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="mynavbar">
+                        <ul class="navbar-nav me-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index.html">Trang chủ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./gioithieu.html">Giới thiệu</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="javascript:void(0)">Sản phẩm</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="tintuc.html">Tin tức</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="javascript:void(0)" id="lienhe">Liên hệ</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link d-flex align-items-center" href="javascript:void(0)"
+                                    id="btn-danhmuc">
+                                    Danh mục <i class="bi bi-chevron-down ms-1" style="transition: 0.3s;"></i>
+                                </a>
+
+                                <ul class="dropdown-menu border-0 shadow-lg p-3" id="menu-danhmuc"
+                                    style="display: none; min-width: 250px; position: absolute;">
+                                    <li class="mb-2">
+                                        <span class="fw-bold text-dark">Loại bánh</span>
+                                        <ul class="list-unstyled ps-3 small text-muted">
+                                            <li>Bánh Cupcake</li>
+                                            <li>Bánh trái cây</li>
+                                            <li>Bánh Quy</li>
+                                            <li>Bánh mặn</li>
+                                        </ul>
+                                    </li>
+                                    <li class="mb-2">
+                                        <span class="fw-bold text-dark">Bánh đặc biệt</span>
+                                        <ul class="list-unstyled ps-3 small text-muted">
+                                            <li>Bánh sinh nhật</li>
+                                            <li>Combo bánh</li>
+                                            <li>Bánh dịp lễ</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <span class="fw-bold text-dark">Dịch vụ khác</span>
+                                        <ul class="list-unstyled ps-3 small text-muted">
+                                            <li>Đặt theo yêu cầu</li>
+                                            <li>Quà tặng kèm</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="btn d-flex">
+                            <input class="form-control me-2" type="text" placeholder="Search">
+                            <button class="btn btn-primary" type="button">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="row">
+
+            <!-- <div class="col-md-3 frame-danhmuc">
+                <h3>DANH MỤC</h3>
+                <ul>
+                    <li>Các loại bánh
+                        <ul>
+                            <li>Bánh Cupcake</li>
+                            <li>Bánh trái cây</li>
+                            <li>Bánh Quy</li>
+                            <li>Bánh mặn</li>
+                        </ul>
+                    </li>
+
+                    <li>Đặc biệt
+                        <ul>
+                            <li>Bánh sinh nhật</li>
+                            <li>Combo bánh</li>
+                            <li>Hộp quà bánh</li>
+                            <li>Bánh dịp lễ</li>
+
+                        </ul>
+                    </li>
+
+                    <li>Bánh ngọt truyền thống
+                        <ul>
+                            <li>Bánh dẻo Trung Thu</li>
+                            <li>Bánh flan</li>
+                            <li>Bánh chuối</li>
+                            <li>Bánh ít</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div> -->
+
+            <div class="col-md-12 frame-danhmuc p-0">
+                <!-- Carousel -->
+                <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+                    <!-- Indicators/dots -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                    </div>
+
+                    <!-- The slideshow/carousel -->
+                    <div class="carousel-inner banner">
+                        <div class="carousel-item active">
+                            <img src="./images/bn1.jpg" alt="Los Angeles" style="object-fit: cover;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/bn2.jpg" alt="Chicago" style="object-fit: cover;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/bn3.jpg" alt="New York" style="object-fit: cover;">
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls/icons -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row align-items-center py-5" style="background-color: #fff2e2;">
+
+            <div class="col-md-6 px-5">
+                <h2 class="mb-3 fw-bold">TRẢI NGHIỆM BÁNH NGỌT ẤM ÁP VỚI KHÔNG GIAN CỔ ĐIỂN</h2>
+
+                <p class="text-dark">
+                    Tiệm bánh mang tông nâu trầm ấm, không gian cổ điển với ánh đèn vàng dịu nhẹ,
+                    tạo cảm giác thư giãn và gần gũi. Bánh được làm thủ công mỗi ngày, vị ngọt nhẹ,
+                    mềm mịn, chú trọng sự tinh tế trong hương vị và cách trình bày,
+                    mang đến trải nghiệm dễ chịu khi thưởng thức.
+                </p>
+
+                <ul class="list-unstyled mt-3">
+                    <li class="mb-2">
+                        <i class="bi bi-check-lg text-success me-2"></i>
+                        Không gian ấm cúng, phong cách cổ điển
+                    </li>
+
+                    <li class="mb-2">
+                        <i class="bi bi-check-lg text-success me-2"></i>
+                        Bánh thủ công tươi mới mỗi ngày
+                    </li>
+
+                    <li>
+                        <i class="bi bi-check-lg text-success me-2"></i>
+                        Hương vị nhẹ nhàng và tinh tế
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-md-6 mt-4 mt-md-0">
+                <div class="row g-3">
+                    <div class="col-6">
+                        <img src="images/anhgioithieu1.jpg" class="img-fluid rounded-3 shadow-sm"
+                            style="min-height: 350px; object-fit: cover;" alt="">
+                    </div>
+
+                    <div class="col-6">
+                        <img src="images/anhgioithieu2.jpg" class="img-fluid rounded-3 shadow-sm mt-4"
+                            style="min-height: 300px; object-fit: cover;" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row my-3 border-bottom">
+            <h3>SẢN PHẨM BÁN CHẠY</h3>
+        </div>
+
+        <div class="row my-2">
+            <div class="col-md-3">
+                <div class="card">
+                    <img class="card-img-top" src="./images/banhngot1.jpg" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Bánh Dâu Ngọt</h4>
+                        <p class="card-text">Thơm ngon và chất lượng.</p>
+                        <a href="./detail.html" class="btn btn-primary">Xem Chi Tiết</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+                    <img class="card-img-top" src="./images/combobanh6.jpg" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Combo Bánh 2</h4>
+                        <p class="card-text">Thơm ngon và chất lượng.</p>
+                        <a href="#" class="btn btn-primary">Xem Chi Tiết</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+                    <img class="card-img-top" src="./images/combobanh3.jpg" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Combo Bánh 3</h4>
+                        <p class="card-text">Thơm ngon và chất lượng.</p>
+                        <a href="#" class="btn btn-primary">Xem Chi Tiết</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+                    <img class="card-img-top" src="./images/combobanh4.jpg" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Combo Bánh 4</h4>
+                        <p class="card-text">Thơm ngon và chất lượng.</p>
+                        <a href="#" class="btn btn-primary">Xem Chi Tiết</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row my-3 border-bottom">
+            <h3>SẢN PHẨM KHUYẾN MÃI</h3>
+        </div>
+
+        <div class="row my-2">
+            <div class="col-md-3">
+                <div class="card">
+                    <img class="card-img-top" src="./images/banhman1.jpg" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Bánh Mặn 1</h4>
+                        <p class="card-text">Thơm ngon và chất lượng.</p>
+                        <a href="#" class="btn btn-primary">Xem Chi Tiết</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+                    <img class="card-img-top" src="./images/banhman2.jpg" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Bánh Mặn 2</h4>
+                        <p class="card-text">Thơm ngon và chất lượng.</p>
+                        <a href="#" class="btn btn-primary">Xem Chi Tiết</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+                    <img class="card-img-top" src="./images/banhman3.jpg" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Bánh Mặn 3</h4>
+                        <p class="card-text">Thơm ngon và chất lượng.</p>
+                        <a href="#" class="btn btn-primary">Xem Chi Tiết</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+                    <img class="card-img-top" src="./images/banhman4.jpg" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Bánh Mặn 4</h4>
+                        <p class="card-text">Thơm ngon và chất lượng.</p>
+                        <a href="#" class="btn btn-primary">Xem Chi Tiết</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row my-3 border-bottom">
+            <h3>SẢN PHẨM HOT</h3>
+        </div>
+
+        <div class="row my-2">
+            <div class="col-md-3">
+                <div class="card">
+                    <img class="card-img-top" src="./images/combobanh5.jpg" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Combo Bánh 1</h4>
+                        <p class="card-text">Thơm ngon và chất lượng.</p>
+                        <a href="#" class="btn btn-primary">Xem Chi Tiết</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+                    <img class="card-img-top" src="./images/banhngot2.jpg" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Bánh Ngọt 2</h4>
+                        <p class="card-text">Thơm ngon và chất lượng.</p>
+                        <a href="#" class="btn btn-primary">Xem Chi Tiết</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+                    <img class="card-img-top" src="./images/banhngot3.jpg" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Bánh Ngọt 3</h4>
+                        <p class="card-text">Thơm ngon và chất lượng.</p>
+                        <a href="#" class="btn btn-primary">Xem Chi Tiết</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+                    <img class="card-img-top" src="./images/banhngot4.jpg" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Bánh Ngọt 4</h4>
+                        <p class="card-text">Thơm ngon và chất lượng.</p>
+                        <a href="#" class="btn btn-primary">Xem Chi Tiết</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row my-3 border-bottom">
+            <h3>BÁNH SINH NHẬT</h3>
+        </div>
+
+        <div class="row my-2">
+            <div class="col-md-3">
+                <div class="card">
+                    <img class="card-img-top" src="./images/banhsinhnhat1.jpg" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Bánh Sinh Nhật 1</h4>
+                        <p class="card-text">Thơm ngon và chất lượng.</p>
+                        <a href="#" class="btn btn-primary">Xem Chi Tiết</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+                    <img class="card-img-top" src="./images/banhsinhnhat2.jpg" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Bánh Sinh Nhật 2</h4>
+                        <p class="card-text">Thơm ngon và chất lượng.</p>
+                        <a href="#" class="btn btn-primary">Xem Chi Tiết</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+                    <img class="card-img-top" src="./images/banhsinhnhat3.jpg" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Bánh Sinh Nhật 3</h4>
+                        <p class="card-text">Thơm ngon và chất lượng.</p>
+                        <a href="#" class="btn btn-primary">Xem Chi Tiết</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+                    <img class="card-img-top" src="./images/banhsinhnhat4.jpg" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Bánh Sinh Nhật 4</h4>
+                        <p class="card-text">Thơm ngon và chất lượng.</p>
+                        <a href="#" class="btn btn-primary">Xem Chi Tiết</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- footer -->
+    <footer class=" text-white pt-4">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 mb-3">
+                    <h5>Liên hệ</h5>
+                    <p>📍 123 Nguyễn Văn A, TP.HCM</p>
+                    <p>📞 0904 749 239</p>
+                    <p>✉ cakebakery@gmail.com</p>
+                    <p>🕒 7:00 - 22:00</p>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <h5>Liên kết</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white text-decoration-none">Trang chủ</a></li>
+                        <li><a href="gioithieu.html" class="text-white text-decoration-none">Giới thiệu</a></li>
+                        <li><a href="product.html" class="text-white text-decoration-none">Sản phẩm</a></li>
+                        <li><a href="tintuc.html" class="text-white text-decoration-none">Tin tức</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Liên hệ</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6592.422415798043!2d106.63325639581271!3d10.743898726738665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752e7eaa206499%3A0x7ed7d81c182fa7ca!2zMjE3IMSQLiBOZ3V54buFbiBWxINuIEx1w7RuZywgUGjGsOG7nW5nIDExLCBRdeG6rW4gNiwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1773045365894!5m2!1svi!2s"
+                        width="450" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+            </div>
+        </div>
+
+        <hr class="border-bottom">
+
+        <!-- Footer bottom -->
+        <div class="text-center">
+            © 2026 Cake Bakery. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        $(document).ready(function () {
+            $(".frame-danhmuc > ul > li > ul").hide();
+            $(".frame-danhmuc > ul > li").click(function () {
+                $(this).children("ul").slideToggle();
+            })
+
+            $("#login").hide();
+            $("#btn-login").click(function () {
+                $("#login").toggle();
+            })
+        })
+    </script>
+
+    <script>
+        function dongFormdn() {
+            document.getElementById("login").style.display = "none";
+        }
+    </script>
+
+    <!-- KIỂM TRA FORM ĐĂNG NHẬP  -->
+    <script>
+        document.getElementById("login").addEventListener("submit", function (e) {
+            e.preventDefault(); // ngăn reload trang
+
+            let user = document.getElementById("user").value;
+            let password = document.getElementById("password").value;
+
+            if (user === "admin" && password === "1234") {
+                alert("Đăng nhập thành công!");
+            } else {
+                alert("Sai tài khoản hoặc mật khẩu!");
+            }
+        });
+    </script>
+    <!-- form dk -->
+    <script>
+        $(document).ready(function () {
+            $("#lienhe").click(function () {
+                $("#dk").toggle();
+            })
+        })
+    </script>
+
+    <script>
+        function dongFormdk() {
+            document.getElementById("dk").style.display = "none";
+        }
+    </script>
+    <!-- Giỏ hàng  -->
+    <script>
+        $(document).ready(function () {
+            $("#giohang").hide();
+            $("#btn-giohang").click(function () {
+                $("#giohang").toggle();
+            })
+        })
+    </script>
+
+    <script>
+        function dongFormgh() {
+            document.getElementById("giohang").style.display = "none";
+        }
+    </script>
+
+    <!-- Thanh toán  -->
+    <script>
+        $(document).ready(function () {
+            $("#thanhtoan").hide();
+            $("#btn-thanhtoan").click(function () {
+                $("#thanhtoan").toggle();
+            })
+        })
+    </script>
+
+    <script>
+        function dongFormtt() {
+            document.getElementById("thanhtoan").style.display = "none";
+        }
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $("#btn-danhmuc").click(function (e) {
+                e.preventDefault();
+
+                // Hiện/ẩn danh mục theo kiểu slide của bạn
+                $("#menu-danhmuc").slideToggle(300);
+
+                // Xoay mũi tên cho nó "ngầu"
+                $(this).find("i").toggleClass("xoay");
+            });
+
+            // Nếu bấm ra ngoài thì tự thu lại
+            $(document).click(function (e) {
+                if (!$(e.target).closest(".dropdown").length) {
+                    $("#menu-danhmuc").slideUp(200);
+                    $("#btn-danhmuc i").removeClass("xoay");
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>

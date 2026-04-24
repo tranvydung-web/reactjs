@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<style>
+    #login {
+        width: 400px;
+        height: 250px;
+        background: #fbf7f1;
+        position: absolute;
+        top: 10%;
+        left: calc(50% - 200px);
+        z-index: 10;
+        border: 2px solid #c89b6d;
+        border-radius: 8px;
+        /* display: none; */
+    }
+
+    #login input {
+        border: 1px solid black;
+    }
+
+    /* dau x */
+    .daux {
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        border: none;
+        background: none;
+        font-size: 25px;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+
+    <!-- form dn -->
+    <form action="" id="login" class="p-4">
+        <button type="button" class="daux" onclick="dongFormdn()">x</button>
+        <div class="row text-center">
+            <h3>Đăng nhập</h3>
+        </div>
+
+        <label for="">User</label>
+        <input type="text" id="user" style="width: 100%;">
+
+        <label for="">Password</label>
+        <input type="password" id="password" style="width: 100%;">
+
+        <div class="row text-center">
+            <div class="div">
+                <button type="submit" style="width: 120px">Đăng Nhập</button>
+            </div>
+        </div>
+    </form>
+
+    <!-- form dk -->
+    <form action="" id="dk">
+        <button type="button" class="daux" onclick="dongForm()">×</button>
+
+        <h1>ĐĂNG KÝ TÀI KHOẢN</h1>
+
+        <div class="fm">
+            <label for="">Tên</label> <br>
+            <input type="text" style="width: 100%">
+        </div>
+
+        <div class="fm">
+            <label for="">Email</label> <br>
+            <input type="email" style="width: 100%">
+        </div>
+
+        <div class="fm">
+            <label for="">Mật khẩu</label> <br>
+            <input type="password" style="width: 100%">
+        </div>
+
+        <div class="fm">
+            <label for="">Xác nhận mật khẩu</label> <br>
+            <input type="text" style="width: 100%">
+        </div>
+
+        <div class="fm">
+            <label for="">Số điện thoại</label> <br>
+            <input type="text" style="width: 100%">
+        </div>
+
+        <div class="fm">
+            <label for="">Nhập địa chỉ</label> <br>
+            <input type="text" style="width: 100%">
+        </div>
+
+        <div class="fmm" align="center"><input type="submit" value="Tạo tài khoản"></div>
+
+    </form>
+    <nav>
+        <a href="#" class="logo">Cake Bakery</a>
+
+        <ul>
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="gioithieu.html">Giới thiệu</a></li>
+            <li><a href="product.html">Sản phẩm</a></li>
+            <li><a href="tintuc.html">Tin tức</a></li>
+            <li><a href="#" id="lienhe">Liên hệ</a></li>
+            <li><a href="#" id="btn-login">Đăng nhập</a></li>
+            <li><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
+        </ul>
+
+        <div class="lienhe">
+            <img src="images/phone-call_white.png" alt="">
+            <a href="">
+                <div class="sdt">(+84)0904_749_239</div>
+            </a>
+        </div>
+        <a href="" class="btn" id="lienhe2">Liên hệ</a>
+    </nav>
+
+    <section class="gioithieu_header">
+
+        <div class="header-content">
+            <h1>Giới Thiệu</h1>
+            <p><a href="index.html">Trang chủ</a> / Giới thiệu</p>
+        </div>
+
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-6 about-img">
+                    <img src="images/tranggioithieu.jpg" alt="">
+                </div>
+
+                <div class="col-md-6 about-text">
+                    <h2>Cake Bakery</h2>
+
+                    <p>
+                        Cake Bakery được thành lập với mong muốn mang đến những chiếc bánh tươi ngon mỗi ngày.
+                        Chúng tôi lựa chọn nguyên liệu tự nhiên, công thức tinh tế và quy trình làm bánh thủ công.
+                    </p>
+
+                    <button id="btn" class="about-btn">Xem chi tiết</button>
+
+                    <!-- xem chi tiết -->
+                    <div id="xemchitiet">
+                        <p>
+                            Chúng tôi sử dụng nguyên liệu nhập khẩu cao cấp như bơ Pháp,
+                            socola Bỉ và trái cây tươi theo mùa.
+                        </p>
+
+                        <p>
+                            Với đội ngũ thợ bánh nhiều năm kinh nghiệm, Cake Bakery luôn
+                            mang đến sản phẩm không chỉ đẹp mắt mà còn đảm bảo chất lượng.
+                        </p>
+
+                        <ul>
+                            <li>✔ Bánh sinh nhật theo yêu cầu</li>
+                            <li>✔ Nhận đặt tiệc – sự kiện</li>
+                            <li>✔ Giao hàng tận nơi</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class=" text-white pt-4">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 mb-3">
+                    <h5>Liên hệ</h5>
+                    <p>📍 123 Nguyễn Văn A, TP.HCM</p>
+                    <p>📞 0904 749 239</p>
+                    <p>✉ cakebakery@gmail.com</p>
+                    <p>🕒 7:00 - 22:00</p>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <h5>Liên kết</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white text-decoration-none">Trang chủ</a></li>
+                        <li><a href="gioithieu.html" class="text-white text-decoration-none">Giới thiệu</a></li>
+                        <li><a href="product.html" class="text-white text-decoration-none">Sản phẩm</a></li>
+                        <li><a href="tintuc.html" class="text-white text-decoration-none">Tin tức</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Liên hệ</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6592.422415798043!2d106.63325639581271!3d10.743898726738665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752e7eaa206499%3A0x7ed7d81c182fa7ca!2zMjE3IMSQLiBOZ3V54buFbiBWxINuIEx1w7RuZywgUGjGsOG7nW5nIDExLCBRdeG6rW4gNiwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1773045365894!5m2!1svi!2s"
+                        width="450" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+            </div>
+        </div>
+
+        <hr class="border-bottom">
+
+        <!-- Footer bottom -->
+        <div class="text-center">
+            © 2026 Cake Bakery. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Form dn -->
+    <script>
+        $(document).ready(function () {
+            $("#login").hide();
+            $("#btn-login").click(function () {
+                $("#login").toggle();
+            })
+        })
+
+        $(document).ready(function () {
+            $("#login").submit(function (event) {
+                event.preventDefault();
+
+                let user = $("#user").val();
+                let password = $("#password").val();
+
+                console.log(user);
+                console.log(password);
+
+                if (user == "" || password == "") {
+                    alert("Bạn chưa nhập user và password");
+                } else if (user == "admin" && password == "1234") {
+                    alert("Bạn đã đăng nhập thành công");
+                } else {
+                    alert("Sai tài khoản hoặc mật khẩu");
+                }
+            });
+        });
+    </script>
+
+    <script>
+        function dongFormdn() {
+            document.getElementById("login").style.display = "none";
+        }
+    </script>
+
+
+
+    <!-- Form dk -->
+    <script>
+        $(document).ready(function () {
+            $("#lienhe").click(function () {
+                $("#dk").toggle();
+            })
+        })
+    </script>
+
+    <script>
+        function dongForm() {
+            document.getElementById("dk").style.display = "none";
+        }
+    </script>
+
+    <script>
+        $(document).ready(function () {
+
+
+            $("#btn").click(function () {
+                $("#xemchitiet").slideToggle();
+            })
+        })
+    </script>
+
+</body>
+
+</html>
