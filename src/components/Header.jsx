@@ -35,9 +35,9 @@ export default function Header() {
       </header>
 
       {/* Navbar */}
-      <div className="container bg-warning">
+      <div className="container-fluid p-0">
         <div className="row">
-          <nav className="navbar navbar-expand-sm navbar-dark">
+          <nav className="navbar navbar-expand-sm navbar-dark px-4">
             <div className="container-fluid">
 
               <a className="navbar-brand" href="#">

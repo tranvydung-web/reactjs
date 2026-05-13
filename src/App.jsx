@@ -9,6 +9,7 @@ import Index from "./pages/Home";
 import Tranggioithieu from "./components/Tranggioithieu";
 import Tinntuc from "./components/Tinntuc";
 import Detail from "./pages/Detail";
+import Sanpham from "./pages/Sanpham";
 
 export default function App() {
   
@@ -21,7 +22,7 @@ export default function App() {
         <Route exact path="/index" element={<Index />} />
         <Route path="/gioithieu" element={<Tranggioithieu />} />
         <Route path="/lienhe" element={<h1>Contact</h1>} />
-        <Route path="/sanpham" element={<h1>Sản Phẩm</h1>} />
+        <Route path="/sanpham" element={<Sanpham />} />
         <Route path="/tintuc" element={<Tinntuc />} />
         <Route path="/detail/:id" element={<Detail />} />
 

@@ -1,7 +1,8 @@
 import { useParams } from "react-router-dom";
 import { useState } from "react";
 import { useLayoutEffect } from "react";
-import products from "../data/product";
+// import products from "../data/data.json";
+import products from "../data/products";
 
 export default function Show_Detail() {
     const { id } = useParams();
@@ -18,134 +19,91 @@ export default function Show_Detail() {
 
     return (
         <div className="container my-5">
-            <div className="row">
+            <div className="detail-wrapper">
+                <div className="row">
 
-                {/* IMAGE */}
-                <div className="col-md-6">
+                    {/* IMAGE */}
+                    <div className="col-md-6">
 
-                    {/* ẢNH CHÍNH */}
-                    <div className="border rounded p-2 shadow-sm">
-                        <img
-                            src={`/images/${product.hinh}`}
-                            alt={product.tensp}
-                            className="img-fluid w-100"
-                            style={{
-                                height: "420px",
-                                objectFit: "cover",
-                                borderRadius: "10px"
-                            }}
-                        />
-                    </div>
+                        <div className="detail-image-box">
 
-                    {/* THUMBNAIL GIẢ (cho giống shop) */}
-                    <div className="d-flex gap-2 mt-3">
-
-                        <img
-                            src={`/images/${product.hinh}`}
-                            alt=""
-                            style={{
-                                width: "80px",
-                                height: "80px",
-                                objectFit: "cover",
-                                borderRadius: "8px",
-                                border: "2px solid #ddd",
-                                cursor: "pointer"
-                            }}
-                        />
-
-                        <img
-                            src={`/images/${product.hinh}`}
-                            alt=""
-                            style={{
-                                width: "80px",
-                                height: "80px",
-                                objectFit: "cover",
-                                borderRadius: "8px",
-                                border: "2px solid #ddd",
-                                cursor: "pointer"
-                            }}
-                        />
-
-                        <img
-                            src={`/images/${product.hinh}`}
-                            alt=""
-                            style={{
-                                width: "80px",
-                                height: "80px",
-                                objectFit: "cover",
-                                borderRadius: "8px",
-                                border: "2px solid #ddd",
-                                cursor: "pointer"
-                            }}
-                        />
-
-                    </div>
-
-                </div>
-
-                {/* INFO */}
-                <div className="col-md-6">
-
-                    <h2>{product.tensp}</h2>
-                    <div className="mt-2">
-                        <p className="text-muted" style={{ lineHeight: "1.7" }}>
-                            {product.mota} Bánh được làm từ nguyên liệu tươi ngon, đảm bảo chất lượng và an toàn vệ sinh thực phẩm. Hương vị hài hòa, phù hợp với nhiều đối tượng khách hàng. Đây là lựa chọn tuyệt vời cho bữa ăn nhẹ hoặc những buổi gặp gỡ bạn bè.
-                        </p>
-                    </div>
-
-                    <h4 className="text-primary">{product.gia}đ</h4>
-
-                    <p><strong>Loại:</strong> {product.danhmuc}</p>
-
-                    {/* ✨ THÔNG TIN MỞ RỘNG */}
-                    <hr />
-
-                    <p><strong>Thành phần:</strong> {product.thanhphan}</p>
-                    <p><strong>Kích thước:</strong> {product.kichthuoc}</p>
-                    <p><strong>Hương vị:</strong> {product.huongvi}</p>
-                    <p><strong>Bảo quản:</strong> {product.baquan}</p>
-
-                    {/* SỐ LƯỢNG */}
-                    <div className="d-flex align-items-center gap-3 my-3">
-
-                        <strong>Số lượng:</strong>
-
-                        <div className="d-flex align-items-center">
-
-                            <button
-                                className="btn btn-outline-cake"
-                                onClick={() => setQty(qty > 1 ? qty - 1 : 1)}
-                            >
-                                -
-                            </button>
-
-                            <input
-                                type="text"
-                                value={qty}
-                                readOnly
-                                className="form-control text-center"
-                                style={{ width: "60px" }}
+                            <img
+                                src={`/images/${product.hinh}`}
+                                alt={product.tensp}
+                                className="detail-main-img"
                             />
 
-                            <button
-                                className="btn btn-outline-cake"
-                                onClick={() => setQty(qty + 1)}
-                            >
-                                +
+                        </div>
+
+                        {/* THUMBNAIL */}
+                        <div className="d-flex gap-2 mt-3">
+
+                            <img src={`/images/${product.hinh}`} className="detail-thumb" />
+                            <img src={`/images/${product.hinh}`} className="detail-thumb" />
+                            <img src={`/images/${product.hinh}`} className="detail-thumb" />
+
+                        </div>
+
+                    </div>
+
+                    {/* INFO */}
+                    <div className="col-md-6">
+
+                        <div className="detail-info-box">
+
+                            <h2>{product.tensp}</h2>
+
+                            <p className="text-muted">
+                                {product.mota}
+                            </p>
+
+                            <h4 className="text-primary">{product.gia}đ</h4>
+
+                            <p><strong>Loại:</strong> {product.danhmuc}</p>
+
+                            <hr />
+
+                            <p><strong>Thành phần:</strong> {product.thanhphan}</p>
+                            <p><strong>Kích thước:</strong> {product.kichthuoc}</p>
+                            <p><strong>Hương vị:</strong> {product.huongvi}</p>
+                            <p><strong>Bảo quản:</strong> {product.baquan}</p>
+
+                            {/* SỐ LƯỢNG */}
+                            <div className="d-flex align-items-center gap-3 my-3">
+
+                                <strong>Số lượng:</strong>
+
+                                <button
+                                    className="btn btn-outline-cake"
+                                    onClick={() => setQty(qty > 1 ? qty - 1 : 1)}
+                                >
+                                    -
+                                </button>
+
+                                <input
+                                    type="text"
+                                    value={qty}
+                                    readOnly
+                                    className="form-control text-center"
+                                    style={{ width: "60px" }}
+                                />
+
+                                <button
+                                    className="btn btn-outline-cake"
+                                    onClick={() => setQty(qty + 1)}
+                                >
+                                    +
+                                </button>
+
+                            </div>
+
+                            <button className="btn btn-cake">
+                                Thêm vào giỏ hàng
                             </button>
 
                         </div>
-                    </div>
 
-                    <button
-                        className="btn btn-cake"
-                        onClick={() => {
-                            console.log("Sản phẩm:", product.tensp);
-                            console.log("Số lượng:", qty);
-                        }}
-                    >
-                        Thêm vào giỏ hàng
-                    </button>
+                    </div>
 
                 </div>
             </div>

@@ -1,5 +1,5 @@
 import { Link, useParams } from "react-router-dom";
-import products from "../data/product";
+import products from "../data/products";
 
 export default function Show_SPTT() {
     const { id } = useParams();
@@ -40,7 +40,7 @@ export default function Show_SPTT() {
 
                                 <Link
                                     to={`/detail/${sp.id}`}
-                                    className="btn btn-sm btn-outline-primary"
+                                    className="btn btn-sm btn-detail"
                                 >
                                     Xem chi tiết
                                 </Link>

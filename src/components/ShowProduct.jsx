@@ -1,4 +1,4 @@
-import products from "../data/product";
+import products from "../data/products";
 import { Link } from "react-router-dom";
 
 // 🔹 Sản phẩm khuyến mãi
@@ -92,7 +92,7 @@ export function ShowSPH() {
 }
 
 // 🔹 Sản phẩm Hot
-export function ShowSPĐB() {
+export function ShowSPDB() {
     const hot = products.filter(sp => sp.loaijsp === "spđb");
 
     return (

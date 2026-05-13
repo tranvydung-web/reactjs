@@ -1,12 +1,12 @@
-import Detail from "../components/Show_Detail";
+import Show_Detail from "../components/Show_Detail";
 import Show_SPTT from "../components/Show_SPTT";
 
-export default function detail() {
+export default function Detail() {
 
     return (
         <>
-            <Detail></Detail>
-            <Show_SPTT></Show_SPTT>
+            <Show_Detail />
+            <Show_SPTT />
         </>
-    )
+    );
 }

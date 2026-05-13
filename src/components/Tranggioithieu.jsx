@@ -8,7 +8,7 @@ export default function Tranggioithieu() {
     <div>
 
       {/* HEADER */}
-      <div className="container">
+      <div className="container-fluid">
         <section className="gioithieu_header">
           <div className="header-content text-center">
             <h1>Giới Thiệu</h1>
@@ -22,8 +22,23 @@ export default function Tranggioithieu() {
         <div className="container">
           <div className="row align-items-center g-5">
 
+            <div className="video-box shadow-lg rounded-4 overflow-hidden mb-3">
+              <iframe
+                src="https://www.youtube.com/embed/vF54bj3V5Es"
+                title="YouTube video"
+                allowFullScreen
+                className="w-100"
+                style={{
+                  height: "450px",
+                  border: "0",
+                  display: "block"
+                }}
+              ></iframe>
+            </div>
+
             {/* IMAGE */}
             <div className="col-md-6">
+
               <img
                 src="images/video1.gif"
                 alt=""

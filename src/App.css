@@ -33,7 +33,10 @@
 
 .carousel-item img {
     width: 100%;
-    height: 100%;
+    height: 600px;
+
+    object-fit: cover;
+    display: block;
 }
 
 .cch {
@@ -80,6 +83,8 @@ ul li {
     border: none;
     padding: 6px 12px;
     border-radius: 10px;
+    width: fit-content; /* THÊM DÒNG NÀY: Giúp nút co lại vừa với chữ */
+    display: inline-block;
 }
 
 .btn-primary:hover {
@@ -190,6 +195,134 @@ ul li {
     margin-top: 40px;
     padding: 20px;
     border-top: 2px solid rgb(230, 219, 219);
+}
+
+.btn-detail {
+    background-color: #c89b6d;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.btn-detail:hover {
+    background-color: #b68658;
+    color: white;
+}
+
+/* ================= DETAIL WRAPPER (1 KHUNG DUY NHẤT) ================= */
+.detail-wrapper {
+    background: #fff;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 10px 35px rgba(0,0,0,0.08);
+}
+
+/* ================= ẢNH ================= */
+.detail-main-img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 14px;
+    transition: 0.3s;
+}
+
+.detail-main-img:hover {
+    transform: scale(1.02);
+}
+
+/* THUMBNAIL */
+.detail-thumb {
+    width: 85px;
+    height: 85px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #eee;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.detail-thumb:hover {
+    border-color: #c89b6d;
+    transform: scale(1.05);
+}
+
+/* ================= TEXT BÊN PHẢI ================= */
+.detail-wrapper h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #5a3e2b;
+    margin-bottom: 10px;
+}
+
+.detail-wrapper p {
+    color: #555;
+    line-height: 1.7;
+}
+
+/* GIÁ */
+.text-primary {
+    color: #c89b6d !important;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+/* LINE */
+.detail-wrapper hr {
+    border-top: 1px solid #eee;
+    margin: 20px 0;
+}
+
+/* ================= QUANTITY ================= */
+.btn-outline-cake {
+    border: 1px solid #c89b6d;
+    color: #c89b6d;
+    font-weight: bold;
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+}
+
+.btn-outline-cake:hover {
+    background: #c89b6d;
+    color: #fff;
+}
+
+/* INPUT */
+.form-control {
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+/* ================= BUTTON ================= */
+.btn-cake {
+    background: #c89b6d;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: 0.3s;
+    display: inline-block;
+    width: auto;
+    padding: 10px 25px;
+}
+
+.btn-cake:hover {
+    background: #b68658;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+    .detail-main-img {
+        height: 300px;
+    }
+
+    .detail-wrapper {
+        padding: 15px;
+    }
 }
 
 /* footer */

@@ -7,15 +7,12 @@ const products = [
     loaijsp: "spkm",
     gia: 25000,
     danhmuc: "Bánh mặn",
-
-    // ✨ thêm thông tin chi tiết
     thanhphan: "Bột mì, trứng, phô mai, xúc xích, bơ",
     huongvi: "Mặn nhẹ, béo, thơm bơ",
     kichthuoc: "Size nhỏ 8–10cm",
     baquan: "Dùng ngon nhất trong ngày",
     dacdiem: "Bánh nướng giòn nhẹ, phù hợp ăn sáng"
   },
-
   {
     id: 2,
     tensp: "Mousse Dâu Nhẹ",
@@ -24,14 +21,12 @@ const products = [
     loaijsp: "spbc",
     gia: 35000,
     danhmuc: "Bánh ngọt",
-
     thanhphan: "Bột mì, đường, sữa, bơ, trứng",
     huongvi: "Ngọt nhẹ, thơm bơ sữa",
     kichthuoc: "Size 10cm",
     baquan: "Bảo quản tủ lạnh 2–3 ngày",
     dacdiem: "Bánh mềm xốp, phù hợp trẻ em"
   },
-
   {
     id: 3,
     tensp: "Mousse Dâu Kem Tươi",
@@ -40,14 +35,12 @@ const products = [
     loaijsp: "sphot",
     gia: 35000,
     danhmuc: "Bánh ngọt",
-
     thanhphan: "Socola, kem tươi, bột cacao",
     huongvi: "Đậm socola, béo nhẹ",
     kichthuoc: "Size 12cm",
     baquan: "Ngon nhất trong 24h",
     dacdiem: "Sản phẩm best seller"
   },
-
   {
     id: 4,
     tensp: "Croissant Kem Xoài",
@@ -56,14 +49,12 @@ const products = [
     loaijsp: "spkm",
     gia: 30000,
     danhmuc: "Bánh mặn",
-
     thanhphan: "Thịt nguội, trứng, phô mai",
     huongvi: "Mặn đậm, béo",
     kichthuoc: "10–12cm",
     baquan: "Ăn trong ngày",
     dacdiem: "Giàu năng lượng"
   },
-
   {
     id: 5,
     tensp: "Bánh Kem Socola Mini",
@@ -72,14 +63,12 @@ const products = [
     loaijsp: "spbc",
     gia: 32000,
     danhmuc: "Bánh ngọt",
-
     thanhphan: "Bột mì, sữa tươi, vani",
     huongvi: "Ngọt nhẹ, thơm vani",
     kichthuoc: "8cm",
     baquan: "2 ngày trong tủ lạnh",
     dacdiem: "An toàn cho trẻ em"
   },
-
   {
     id: 6,
     tensp: "Bánh Socola Cherry",
@@ -88,14 +77,12 @@ const products = [
     loaijsp: "sphot",
     gia: 32000,
     danhmuc: "Bánh ngọt",
-
     thanhphan: "Socola, kem, trứng",
     huongvi: "Ngọt đậm, béo",
     kichthuoc: "10cm",
     baquan: "24h ngon nhất",
     dacdiem: "Được đặt nhiều nhất tuần"
   },
-
   {
     id: 7,
     tensp: "Bánh Mặn Phô Mai",
@@ -104,14 +91,12 @@ const products = [
     loaijsp: "spkm",
     gia: 22000,
     danhmuc: "Bánh mặn",
-
     thanhphan: "Bột mì, thịt, trứng",
     huongvi: "Mặn truyền thống",
     kichthuoc: "10cm",
     baquan: "Trong ngày",
     dacdiem: "Hương vị cổ điển"
   },
-
   {
     id: 8,
     tensp: "Bánh Kem Dâu Tươi",
@@ -120,14 +105,12 @@ const products = [
     loaijsp: "spbc",
     gia: 38000,
     danhmuc: "Bánh ngọt",
-
     thanhphan: "Bơ, sữa, trứng, đường",
     huongvi: "Béo ngọt nhẹ",
     kichthuoc: "9cm",
     baquan: "2–3 ngày",
     dacdiem: "Mềm mịn"
   },
-
   {
     id: 9,
     tensp: "Bánh Mì Phô Mai Gà Xé",
@@ -136,14 +119,12 @@ const products = [
     loaijsp: "sphot",
     gia: 25000,
     danhmuc: "Bánh mặn",
-
     thanhphan: "Nguyên liệu đặc biệt",
     huongvi: "Đậm vị",
     kichthuoc: "12cm",
     baquan: "Ngắn hạn",
     dacdiem: "Limited edition"
   },
-
   {
     id: 10,
     tensp: "Bánh Quy Thảo Mộc",
@@ -152,14 +133,12 @@ const products = [
     loaijsp: "spkm",
     gia: 20000,
     danhmuc: "Bánh mặn",
-
     thanhphan: "Thịt, trứng, phô mai",
     huongvi: "Mặn béo",
     kichthuoc: "10cm",
     baquan: "Trong ngày",
     dacdiem: "Ăn sáng tốt"
   },
-
   {
     id: 11,
     tensp: "Cupcake Kem Vanilla",
@@ -168,14 +147,12 @@ const products = [
     loaijsp: "spbc",
     gia: 28000,
     danhmuc: "Bánh ngọt",
-
     thanhphan: "Sữa, bơ, trứng",
     huongvi: "Ngọt nhẹ",
     kichthuoc: "9cm",
     baquan: "2 ngày",
     dacdiem: "Mềm xốp"
   },
-
   {
     id: 12,
     tensp: "Bánh Quy Thảo Mộc",
@@ -184,14 +161,12 @@ const products = [
     loaijsp: "sphot",
     gia: 20000,
     danhmuc: "Bánh mặn",
-
     thanhphan: "Công thức đặc biệt",
     huongvi: "Đậm đà",
     kichthuoc: "12cm",
     baquan: "Ngắn hạn",
     dacdiem: "Hot trend"
   },
-
   {
     id: 13,
     tensp: "Bánh sinh nhật trái cây",
@@ -200,14 +175,12 @@ const products = [
     loaijsp: "spđb",
     gia: 180000,
     danhmuc: "Bánh đặc biệt",
-
     thanhphan: "Kem tươi, trái cây, bông lan",
     huongvi: "Ngọt mát, trái cây tươi",
     kichthuoc: "18cm",
     baquan: "Tủ lạnh 2 ngày",
     dacdiem: "Trang trí đẹp"
   },
-
   {
     id: 14,
     tensp: "Bánh Kem Xoài Tươi",
@@ -216,14 +189,12 @@ const products = [
     loaijsp: "spđb",
     gia: 150000,
     danhmuc: "Bánh đặc biệt",
-
     thanhphan: "Xoài, kem, bông lan",
     huongvi: "Ngọt thanh xoài",
     kichthuoc: "18cm",
     baquan: "2 ngày",
     dacdiem: "Hương xoài tự nhiên"
   },
-
   {
     id: 15,
     tensp: "Combo bánh Giáng Sinh",
@@ -232,14 +203,12 @@ const products = [
     loaijsp: "spđb",
     gia: 120000,
     danhmuc: "Bánh đặc biệt",
-
     thanhphan: "Bánh mix nhiều loại",
     huongvi: "Đa dạng",
     kichthuoc: "Combo",
     baquan: "Ngắn hạn",
     dacdiem: "Quà lễ hội"
   },
-
   {
     id: 16,
     tensp: "Combo bánh Tiramisu",
@@ -248,7 +217,6 @@ const products = [
     loaijsp: "spđb",
     gia: 140000,
     danhmuc: "Bánh đặc biệt",
-
     thanhphan: "Mascarpone, cacao, cà phê",
     huongvi: "Đắng nhẹ cà phê",
     kichthuoc: "Combo",
@@ -258,3 +226,4 @@ const products = [
 ];
 
 export default products;
+

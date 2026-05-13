@@ -1,6 +1,6 @@
 export default function Banner() {
     return (
-        <div className=" container col-md-12 banner p-0">
+        <div className="container banner p-0">
             <div className="carousel slide" data-bs-ride="carousel" id="demo">
                 <div className="carousel-indicators">
                     <button

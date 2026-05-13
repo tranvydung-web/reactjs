@@ -7,7 +7,7 @@ export default function Tintuc() {
         <div>
 
             {/* HEADER */}
-            <div className="container">
+            <div className="container-fluid">
                 <section className="tintuc_header">
                     <div className="header-content text-white">
                         <h1>Tin tức</h1>
