@@ -10,11 +10,24 @@ export default function ConnectAPI() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/products")
+      .get("https://firestore.googleapis.com/v1/projects/tiembanh-3b756/databases/(default)/documents/products")
       .then((res) => {
-        setProducts(res.data || []);
-        /*  res.data → danh sách sản phẩm từ API
-            || [] → nếu không có dữ liệu, dùng mảng rỗng*/
+        // 1. Kiểm tra xem có dữ liệu trả về không
+        if (res.data.documents) {
+          // 2. Chuyển đổi cấu trúc khó hiểu của Firebase thành mảng dễ dùng
+          const ds = res.data.documents.map((doc) => {
+            const fields = doc.fields;
+            return {
+              id: fields.id?.stringValue || "0",
+              tensp: fields.tensp?.stringValue || "Chưa có tên",
+              gia: parseInt(fields.gia?.integerValue || 0),
+              hinh: fields.hinh?.stringValue || ""
+            };
+          });
+          setProducts(ds);
+        } else {
+          setProducts([]);
+        }
       })
       .catch((err) => {
         console.error("Lỗi:", err);
@@ -36,7 +49,7 @@ export default function ConnectAPI() {
           products.map((item) => (
             <div className="col-12 col-sm-6 col-md-4" key={item.id}>
               <div className="card h-100 shadow-sm">
-                <img src={`/images/${item.hinh}`} className="card-img-top img-fluid product-img" />
+                <img src={item.hinh} className="card-img-top img-fluid product-img" />
                 <div className="card-body text-center">
                   <h5 className="card-title">{item.tensp}</h5>
                   <p className="text-danger fw-bold">{item.gia.toLocaleString()} USD</p>
