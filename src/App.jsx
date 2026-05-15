@@ -10,6 +10,7 @@ import Tranggioithieu from "./components/Tranggioithieu";
 import Tinntuc from "./components/Tinntuc";
 import Detail from "./pages/Detail";
 import Sanpham from "./pages/Sanpham";
+import Lienhe from "./pages/Lienhe";
 
 export default function App() {
   
@@ -21,10 +22,10 @@ export default function App() {
         <Route exact path="*" element={<Index />} />
         <Route exact path="/index" element={<Index />} />
         <Route path="/gioithieu" element={<Tranggioithieu />} />
-        <Route path="/lienhe" element={<h1>Contact</h1>} />
         <Route path="/sanpham" element={<Sanpham />} />
         <Route path="/tintuc" element={<Tinntuc />} />
         <Route path="/detail/:id" element={<Detail />} />
+        <Route path="/lienhe" element={<Lienhe />} />
 
       </Routes>
 
