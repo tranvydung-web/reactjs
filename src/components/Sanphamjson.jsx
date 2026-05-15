@@ -52,7 +52,7 @@ export default function ConnectAPI() {
                 <img src={item.hinh} className="card-img-top img-fluid product-img" />
                 <div className="card-body text-center">
                   <h5 className="card-title">{item.tensp}</h5>
-                  <p className="text-danger fw-bold">{item.gia.toLocaleString()} USD</p>
+                  <p className="text-danger fw-bold">{item.gia.toLocaleString()} VNĐ</p>
                   <Link
                     to={`/detail/${item.id}`}
                     className="mt-2" style={{
